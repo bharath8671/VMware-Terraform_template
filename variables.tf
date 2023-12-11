@@ -1,6 +1,6 @@
 variable "vsphere_server" {
   type = string
-  default = "vc7.bgl1.global.tslabs.hpecorp.net"
+  default = "hostname"
 }
 
 variable "user" {
@@ -15,12 +15,12 @@ variable "password" {
 
 variable "datacenter" {
   type = string
-  default = "BGL"
+  default = "DC"
 }
 
 variable "datastore" {
   type = string
-  default = "local-224"
+  default = "DS"
 }
 
 variable "cluster_name" {
@@ -30,12 +30,12 @@ variable "cluster_name" {
 
 variable "network" {
   type = string
-  default = "Management Network"
+  default = "Network"
 }
 
 variable "template" {
   type = string
-  default = "ubuntu_22.4.0_thin_2_2_20"
+  default = "Template"
 }
 
 variable "resource_pool" {
@@ -45,12 +45,12 @@ variable "resource_pool" {
 
 variable "vm_name" {
   type = string
-  default = "VM-HCENEXT-TERRAFORM-TEST-Template"
+  default = "vm_name"
 }
 
 variable "folder" {
   type = string
-  default = "HCENext"
+  default = "folder"
 }
 
 variable "num_cpus" {
@@ -68,7 +68,7 @@ variable "guest_id" {
 
 variable "iso_path" {
   type = string
-  default = "/ISO/RHEL/RHEL-8.5.0-20211013.2-x86_64-dvd1.iso"
+  default = "iso"
 }
 
 variable "adapter_type" {
