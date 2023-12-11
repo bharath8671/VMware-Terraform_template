@@ -1,0 +1,77 @@
+variable "vsphere_server" {
+  type = string
+  default = "vc7.bgl1.global.tslabs.hpecorp.net"
+}
+
+variable "user" {
+  type = string
+  default = "<<username>>"
+}
+
+variable "password" {
+  type = string
+  default = "<<password>>"
+}
+
+variable "datacenter" {
+  type = string
+  default = "BGL"
+}
+
+variable "datastore" {
+  type = string
+  default = "local-224"
+}
+
+variable "cluster_name" {
+  type = string
+  default = "1-DEV"
+}
+
+variable "network" {
+  type = string
+  default = "Management Network"
+}
+
+variable "template" {
+  type = string
+  default = "ubuntu_22.4.0_thin_2_2_20"
+}
+
+variable "resource_pool" {
+  type = string
+  default = "1-DEV"
+}
+
+variable "vm_name" {
+  type = string
+  default = "VM-HCENEXT-TERRAFORM-TEST-Template"
+}
+
+variable "folder" {
+  type = string
+  default = "HCENext"
+}
+
+variable "num_cpus" {
+  default = 1
+}
+
+variable "memory" {
+  default = 2048
+}
+
+variable "guest_id" {
+  type = string
+  default = "rhel8_64Guest"
+}
+
+variable "iso_path" {
+  type = string
+  default = "/ISO/RHEL/RHEL-8.5.0-20211013.2-x86_64-dvd1.iso"
+}
+
+variable "adapter_type" {
+  type = string
+  default = "vmxnet3"
+}
